@@ -1,11 +1,16 @@
 :root {
-  --font-family: 'Open Sans', sans-serif;
-  --content-width: 1370px;
+  --font-family: 'CygreRegular', sans-serif;
+  --content-width: 1400px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --accent: #ff4d06;
+  --accent-dark: #cc3a00;
   --black: #232323;
   --white: #fff;
+  --light-gray: #e6e6e6;
+  --medium-gray: #ccc;
+  --dark-gray: #666;
+  --bg-gray: rgba(244, 247, 250, 1);
 }

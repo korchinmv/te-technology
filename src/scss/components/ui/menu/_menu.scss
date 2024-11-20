@@ -1,0 +1,39 @@
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+
+  &__link {
+    font-family: 'RacamaURegular';
+    font-size: 18px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: var(--accent);
+
+      & + .menu__dropdown {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      svg {
+        transform: rotate(180deg);
+
+        path {
+          stroke: var(--accent);
+        }
+      }
+    }
+
+    svg {
+      margin: 0 0 3px 8px;
+      transition: all 0.3s;
+    }
+  }
+
+  &__dropdown {
+    top: 100px;
+  }
+}

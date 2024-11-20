@@ -1,0 +1,49 @@
+.cart {
+  display: flex;
+  align-items: center;
+
+  &__btn {
+    height: 48px;
+    width: 72px;
+    background-color: var(--light-gray);
+    border-radius: 53px;
+    transition: background-color 0.3s;
+    margin-right: 16px;
+
+    &:hover {
+      background-color: var(--accent);
+
+      svg {
+        path {
+          stroke: var(--white);
+        }
+      }
+    }
+
+    svg {
+      path {
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__products-qty,
+  &__products-price {
+    font-family: 'RacamaURegular';
+    color: var(--dark-gray);
+  }
+
+  &__products-qty {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  &__products-price {
+    font-size: 14px;
+  }
+}
