@@ -1,0 +1,15 @@
+.button-transparent {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  border-radius: 38px;
+  padding: 15px 35px;
+  color: var(--white);
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+
+  &:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+  }
+}
