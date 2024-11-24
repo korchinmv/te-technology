@@ -108,26 +108,23 @@ input {
 //   }
 // }
 
-// .section-title {
-//   font-size: 64px;
-//   text-transform: uppercase;
+.section-title {
+  font-size: 64px;
+  text-transform: uppercase;
+  font-family: 'RacamaURegular';
 
-//   @media screen and (width <= 1024px) {
-//     font-size: 48px;
-//   }
+  @media screen and (width <= 1024px) {
+    font-size: 48px;
+  }
 
-//   @media screen and (width <= 990px) {
-//     font-size: 42px;
-//   }
+  @media screen and (width <= 990px) {
+    font-size: 42px;
+  }
 
-//   @media screen and (width <= 768px) {
-//     font-size: 36px;
-//   }
-
-//   @media screen and (width <= 576px) {
-//     font-size: 32px;
-//   }
-// }
+  @media screen and (width <= 768px) {
+    font-size: 36px;
+  }
+}
 
 // .text-block {
 //   &__text {
