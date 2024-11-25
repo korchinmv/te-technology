@@ -1,0 +1,11 @@
+.socials {
+  &__item {
+  }
+  &__link {
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}

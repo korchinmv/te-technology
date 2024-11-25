@@ -1,0 +1,37 @@
+.tabs {
+  &__nav-item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &--active {
+      .tabs__nav-btn {
+        color: var(--accent);
+        text-decoration: transparent;
+      }
+    }
+  }
+
+  &__nav-btn {
+    color: var(--dark-gray);
+    font-size: 36px;
+    font-family: 'RacamaURegular';
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transition:
+      color 0.3s,
+      text-decoration 0.5s;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  &__panel {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

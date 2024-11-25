@@ -1,0 +1,25 @@
+.table {
+  width: 100%;
+  &__body {
+  }
+
+  &__row {
+    display: flex;
+    column-gap: 24px;
+    font-size: 18px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__item,
+  &__item-name {
+    max-width: 332px;
+    width: 100%;
+  }
+
+  &__item-name {
+    color: var(--dark-gray);
+  }
+}
