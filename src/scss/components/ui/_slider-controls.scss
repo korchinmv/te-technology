@@ -1,0 +1,63 @@
+.slider-controls {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+
+  &__prev,
+  &__next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      svg {
+        path {
+          stroke: var(--accent-dark);
+          transition: all ease 0.3s;
+        }
+
+        rect {
+          fill: var(--accent-dark);
+          transition: all ease 0.3s;
+        }
+      }
+    }
+  }
+
+  &__prev {
+    transform: rotate(180deg);
+  }
+
+  svg {
+    path,
+    rect {
+      transition: all ease 0.3s;
+    }
+  }
+}
+
+.swiper-button-disabled {
+  cursor: default;
+
+  &:hover {
+    svg {
+      path {
+        stroke: var(--medium-gray);
+      }
+
+      rect {
+        fill: var(--medium-gray);
+      }
+    }
+  }
+
+  svg {
+    path {
+      stroke: var(--medium-gray);
+    }
+
+    rect {
+      fill: var(--medium-gray);
+    }
+  }
+}

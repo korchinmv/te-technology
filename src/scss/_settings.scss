@@ -87,26 +87,19 @@ input {
 //   line-height: 1.2;
 // }
 
-// .title-block {
-//   font-size: 40px;
-//   text-transform: uppercase;
+.title-block {
+  font-family: 'RacamaURegular';
+  font-size: 36px;
+  font-weight: 400;
 
-//   @media screen and (width <= 1024px) {
-//     font-size: 38px;
-//   }
+  @media screen and (width <= 990px) {
+    font-size: 32px;
+  }
 
-//   @media screen and (width <= 990px) {
-//     font-size: 32px;
-//   }
-
-//   @media screen and (width <= 768px) {
-//     font-size: 28px;
-//   }
-
-//   @media screen and (width <= 576px) {
-//     font-size: 24px;
-//   }
-// }
+  @media screen and (width <= 768px) {
+    font-size: 24px;
+  }
+}
 
 .section-title {
   font-size: 64px;

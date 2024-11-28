@@ -1,0 +1,66 @@
+.questions {
+  color: var(--white);
+  background-color: var(--black);
+  padding: 32px;
+  border-radius: 12px;
+
+  @media screen and (width <= 1024px) {
+    padding: 24px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin-right: 24px;
+
+    @media screen and (width <= 768px) {
+      margin-right: 0;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__title {
+    font-family: 'RacamaURegular';
+    font-size: 36px;
+    font-weight: 400;
+
+    @media screen and (width <= 1024px) {
+      font-size: 30px;
+    }
+
+    @media screen and (width <= 768px) {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text {
+    margin-top: auto;
+    line-height: 1.4;
+    font-size: 18px;
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__form {
+    flex: 1 1 50%;
+
+    .form__input-wrapper--margin {
+      @media screen and (width <= 768px) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

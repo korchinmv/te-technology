@@ -1,16 +1,15 @@
 .mobile-navbar {
   background-color: var(--white);
   padding: 8px 0 12px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  position: relative;
-  z-index: 1;
   display: none;
+  width: 100%;
+  z-index: 1;
 
   @media screen and (width <= 768px) {
     display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
 
   &::after {

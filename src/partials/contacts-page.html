@@ -278,6 +278,108 @@
           </ul>
         </li>
       </ul>
+
+
     </ul>
+
+    <div class="contacts__questions questions">
+      <div class="questions__wrapper">
+        <div class="questions__left">
+          <h2 class="questions__title title-block">Есть вопросы?</h2>
+          <p class="questions__text">
+            Обратитесь в службу поддержки, наши специалисты
+            оперативно проконсультируют вас по всем вопросам. <br>
+            Мы всегда готовы помочь.
+          </p>
+        </div>
+
+        <form class="questions__form form" id="contacts-form" action="#">
+          <div class="form__input-wrapper form__input-wrapper--margin">
+            <input class="form__input input-name" type="text" id="name" placeholder="" data-validate-field="name">
+            <label class="form__placeholder" for="name">Как к вам обращаться</label>
+          </div>
+
+          <div class="form__input-wrapper form__input-wrapper--margin">
+            <input class="form__input input-tel" type="tel" id="phone" placeholder="" data-validate-field="phone">
+            <label class="form__placeholder" for="phone">Телефон</label>
+          </div>
+
+          <div class="form__input-wrapper form__input-wrapper--margin">
+            <input class="form__input input-mail" type="text" id="email" placeholder="" data-validate-field="mail">
+            <label class="form__placeholder" for="email">Email</label>
+          </div>
+
+          <div class="form__input-wrapper form__input-wrapper--margin">
+            <input class="form__input input-name" type="text" id="company-name" placeholder=""
+              data-validate-field="company-name">
+            <label class="form__placeholder" for="company-name">Название вашей компании</label>
+          </div>
+
+          <div class="form__approval">
+            <label class="form__label form__label--checkbox custom-checkbox">
+              <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                data-validate-field="checkbox">
+
+              <span class="custom-checkbox__span"></span>
+            </label>
+            <p class="form__text">Вы соглашаетесь с политикой обработки персональных данных </p>
+          </div>
+
+          <button class="form__btn button-primary">
+            Оставить заявку
+          </button>
+
+        </form>
+      </div>
+    </div>
+
+    <section class="clients">
+      <div class="clients__head">
+        <h2 class="clients__title title-block">Наши клиенты</h2>
+
+        <div class="clients__slider-controls slider-controls">
+          <button class="clients__slider-controls-prev slider-controls__prev" aria-label="Назад">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.7861 8.85718L33.929 20L22.7861 31.1429" stroke="#FF4D06" stroke-width="2"
+                stroke-linejoin="bevel" />
+              <rect x="6" y="19" width="21" height="2" fill="#FF4D06" />
+            </svg>
+          </button>
+
+          <button class="clients__slider-controls-next slider-controls__next" aria-label="Вперед">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.7861 8.85718L33.929 20L22.7861 31.1429" stroke="#FF4D06" stroke-width="2"
+                stroke-linejoin="bevel" />
+              <rect x="6" y="19" width="21" height="2" fill="#FF4D06" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="clients__slider swiper">
+        <ul class="clients__list swiper-wrapper">
+          <li class="clients__item swiper-slide">
+            <img src="img/clients/absolut.png" alt="Лого">
+          </li>
+          <li class="clients__item swiper-slide">
+            <img src="img/clients/electroshit.png" alt="Лого">
+          </li>
+          <li class="clients__item swiper-slide">
+            <img src="img/clients/lukoil.png" alt="Лого">
+          </li>
+          <li class="clients__item swiper-slide">
+            <img src="img/clients/tarkett.png" alt="Лого">
+          </li>
+          <li class="clients__item swiper-slide">
+            <img src="img/clients/tarkett.png" alt="Лого">
+          </li>
+          <li class="clients__item swiper-slide">
+            <img src="img/clients/tarkett.png" alt="Лого">
+          </li>
+        </ul>
+
+        <div class="clients__pagination slider-pagination"></div>
+      </div>
+    </section>
   </div>
 </section>
