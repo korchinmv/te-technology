@@ -32,7 +32,7 @@
       </li>
 
       <li class="mobile-navbar__item">
-        <a class="mobile-navbar__link" href="#">
+        <button class="mobile-navbar__link mobile-navbar__link--search">
           <div class="mobile-navbar__icon">
             <svg class="mobile-navbar__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +42,7 @@
           </div>
 
           <span class="mobile-navbar__name">Поиск</span>
-        </a>
+        </button>
       </li>
 
       <li class="mobile-navbar__item">
@@ -65,5 +65,25 @@
         </a>
       </li>
     </ul>
+
+    <div class="navbar-menu">
+      <button class="navbar-menu__btn-close">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 26L26.2132 4.7868L28.3345 6.90812L7.12132 28.1213L5 26Z" fill="white" />
+          <path d="M28.3345 26L7.12127 4.7868L4.99995 6.90812L26.2132 28.1213L28.3345 26Z" fill="white" />
+        </svg>
+      </button>
+
+      <form class="navbar-menu__form-search form-search" action="#">
+        <input class="form-search__input navbar-menu__input" type="text" placeholder="Поиск по сайту">
+
+        <button class="form-search__search-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3.75" y="3.75" width="13.5" height="13.5" rx="6.75" stroke="white" stroke-width="1.5"></rect>
+            <path d="M16.5 16.5L20.25 20.25" stroke="white" stroke-width="1.5" stroke-linejoin="bevel"></path>
+          </svg>
+        </button>
+      </form>
+    </div>
   </div>
 </nav>

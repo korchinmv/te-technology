@@ -1,0 +1,47 @@
+.navbar-menu {
+  background-color: var(--white);
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  bottom: 72px;
+  left: 0;
+  padding: 16px;
+  height: 60vh;
+  z-index: 3;
+  transform: translateY(200%);
+  opacity: 0;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.5s ease-in-out;
+
+  &--active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  &__form-search {
+    width: 100%;
+  }
+
+  &__btn-close {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -50px;
+    right: 16px;
+
+    svg {
+      path {
+        transition: all 0.3s;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: var(--accent);
+        }
+      }
+    }
+  }
+}

@@ -28,6 +28,7 @@
 }
 
 main {
+  padding-top: 276px;
   flex-grow: 1;
 }
 
@@ -198,4 +199,9 @@ input {
   &:hover {
     background-color: var(--accent-dark);
   }
+}
+
+.bg-gradient {
+  background: linear-gradient(140deg, #ff4d06 -27%, rgba(33, 33, 31, 0) 40%);
+  background-color: var(--black);
 }
