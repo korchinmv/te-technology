@@ -5,6 +5,7 @@ import {
   navbarMenuInput,
   overlay,
   body,
+  header,
 } from "../../_vars.js";
 
 if (btnSearchNavbar) {
@@ -16,9 +17,11 @@ if (btnSearchNavbar) {
     if (navbarMenu.classList.contains("navbar-menu--active")) {
       overlay.classList.add("overlay--visible");
       body.classList.add("page__body--no-scroll");
+      header.style.zIndex = "2";
     } else {
       overlay.classList.remove("overlay--visible");
       body.classList.remove("page__body--no-scroll");
+      header.style.zIndex = "4";
     }
   });
 
@@ -27,5 +30,6 @@ if (btnSearchNavbar) {
     btnSearchNavbar.classList.remove("mobile-navbar__link--active");
     overlay.classList.remove("overlay--visible");
     body.classList.remove("page__body--no-scroll");
+    header.style.zIndex = "4";
   });
 }

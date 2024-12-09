@@ -9,6 +9,7 @@
     border-radius: 53px;
     transition: background-color 0.3s;
     margin-right: 16px;
+    position: relative;
 
     &:hover {
       background-color: var(--accent);

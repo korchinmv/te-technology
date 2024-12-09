@@ -1,23 +1,29 @@
-import { main } from "../_vars.js";
-
 const header = document.querySelector(".header");
 const headerTop = document.querySelector(".header__top");
 const headerMiddle = document.querySelector(".header__middle");
+let lastScroll = 0;
 
-const scrollFunction = () => {
-  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-    headerTop.classList.add("header__top--hide");
-    headerMiddle.classList.add("header__middle--hide");
-    header.classList.add("header--fixed");
-    main.style.paddingTop = "80px";
-  } else {
+window.addEventListener("scroll", () => {
+  const currentScroll = window.scrollY;
+
+  if (currentScroll <= 0) {
+    if (header.classList.contains("header--fixed")) {
+      headerTop.classList.remove("header__top--hide");
+      headerMiddle.classList.remove("header__middle--hide");
+      header.classList.remove("header--fixed");
+    }
+    return;
+  }
+
+  if (currentScroll > lastScroll) {
     headerTop.classList.remove("header__top--hide");
     headerMiddle.classList.remove("header__middle--hide");
     header.classList.remove("header--fixed");
-    main.style.paddingTop = "276px";
+  } else if (currentScroll < lastScroll) {
+    headerTop.classList.add("header__top--hide");
+    headerMiddle.classList.add("header__middle--hide");
+    header.classList.add("header--fixed");
   }
-};
 
-window.onscroll = function () {
-  scrollFunction();
-};
+  lastScroll = currentScroll;
+});

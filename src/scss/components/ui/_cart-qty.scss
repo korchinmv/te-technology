@@ -1,0 +1,26 @@
+.cart-qty {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 16px;
+
+  &__num {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'GeologicaRegular';
+  }
+}

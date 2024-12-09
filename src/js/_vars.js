@@ -9,6 +9,7 @@ const navbarMenu = document?.querySelector(".navbar-menu");
 const btnSearchNavbar = document?.querySelector(".mobile-navbar__link--search");
 const navbarMenuBtnClose = document?.querySelector(".navbar-menu__btn-close");
 const navbarMenuInput = document?.querySelector(".navbar-menu__input");
+const header = document?.querySelector(".header");
 
 export {
   body,
@@ -20,4 +21,5 @@ export {
   btnSearchNavbar,
   navbarMenu,
   navbarMenuInput,
+  header,
 };

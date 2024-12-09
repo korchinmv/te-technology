@@ -213,11 +213,7 @@
   &__map {
     border-radius: 12px;
     flex: 1 1 50%;
-
-    iframe {
-      border-radius: 12px;
-      filter: hue-rotate(310deg);
-    }
+    filter: hue-rotate(310deg);
 
     @media screen and (width <= 990px) {
       min-height: 230px;

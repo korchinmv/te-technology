@@ -28,8 +28,12 @@
 }
 
 main {
-  padding-top: 276px;
+  padding-top: 220px;
   flex-grow: 1;
+
+  @media screen and (width <= 768px) {
+    padding-top: 65px;
+  }
 }
 
 img {
