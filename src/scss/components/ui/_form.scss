@@ -68,7 +68,7 @@
   }
 
   &__input:focus + .form__placeholder,
-  &__input:focus + .form__placeholder {
+  &__input:not(:placeholder-shown) + .form__placeholder {
     font-size: 12px;
     top: 3px;
     transform: translateY(0);
