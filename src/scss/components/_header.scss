@@ -1,9 +1,7 @@
 .header {
   background-color: rgba(244, 247, 250, 1);
   z-index: 4;
-  top: 0;
   width: 100%;
-  position: fixed;
   top: 0;
 
   .header__bottom-logo {
@@ -14,8 +12,24 @@
     clip: rect(0 0 0 0);
   }
 
-  &--fixed {
+  &--scroll {
     background-color: rgba(244, 247, 250, 1);
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-100%);
+    visibility: hidden;
+    position: fixed;
+    z-index: 4;
+    transition:
+      opacity 0.1s ease,
+      visibility 0.1s ease,
+      transform 0.3s ease;
+
+    &-active {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+    }
 
     .header__bottom-logo {
       display: block;
@@ -26,7 +40,7 @@
     }
 
     .header__bottom {
-      padding: 16px 0;
+      padding: 10px 0;
     }
 
     .menu__dropdown {
@@ -45,17 +59,6 @@
     padding: 14px 0 16px;
     position: relative;
     transition: all 0.2s ease;
-
-    &--hide {
-      position: absolute;
-      overflow: hidden;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      width: 1px;
-      height: 1px;
-      clip: rect(0 0 0 0);
-    }
 
     &::after {
       content: '';
@@ -80,17 +83,6 @@
     padding: 24px 0;
     position: relative;
     transition: all 0.2s ease;
-
-    &--hide {
-      position: absolute;
-      overflow: hidden;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      width: 1px;
-      height: 1px;
-      clip: rect(0 0 0 0);
-    }
 
     &::after {
       content: '';

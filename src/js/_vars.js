@@ -1,9 +1,11 @@
-const body = document?.querySelector(".page__body");
+const body = document?.querySelector(".page");
 const overlay = document?.querySelector(".overlay");
 const main = document?.querySelector(".main");
 
 const mobileMenu = document?.querySelector(".mobile-menu");
-const burgerButton = document?.querySelector(".hamburger-lines--mobile-menu");
+const burgerButton = document?.querySelectorAll(
+  ".hamburger-lines--mobile-menu"
+);
 
 const navbarMenu = document?.querySelector(".navbar-menu");
 const btnSearchNavbar = document?.querySelector(".mobile-navbar__link--search");

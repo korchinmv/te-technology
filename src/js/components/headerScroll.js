@@ -1,28 +1,25 @@
-const header = document.querySelector(".header");
-const headerTop = document.querySelector(".header__top");
-const headerMiddle = document.querySelector(".header__middle");
+const headerScroll = document.querySelector(".header--scroll");
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
 
-  if (currentScroll <= 0) {
-    if (header.classList.contains("header--fixed")) {
-      headerTop.classList.remove("header__top--hide");
-      headerMiddle.classList.remove("header__middle--hide");
-      header.classList.remove("header--fixed");
-    }
+  if (currentScroll <= 220) {
+    headerScroll.classList.remove("header--scroll-active");
     return;
   }
 
   if (currentScroll > lastScroll) {
-    headerTop.classList.remove("header__top--hide");
-    headerMiddle.classList.remove("header__middle--hide");
-    header.classList.remove("header--fixed");
+    headerScroll.classList.remove("header--scroll-active");
   } else if (currentScroll < lastScroll) {
-    headerTop.classList.add("header__top--hide");
-    headerMiddle.classList.add("header__middle--hide");
-    header.classList.add("header--fixed");
+    headerScroll.classList.add("header--scroll-active");
+  }
+
+  if (
+    window.innerHeight + window.scrollY >=
+    document.documentElement.scrollHeight
+  ) {
+    headerScroll.classList.add("header--scroll-active");
   }
 
   lastScroll = currentScroll;

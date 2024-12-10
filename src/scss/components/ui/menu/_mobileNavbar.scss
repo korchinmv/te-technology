@@ -90,7 +90,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          font-family: 'GeologicaRegular';
+          font-family: 'GeologicaLight';
         }
       }
     }
@@ -147,12 +147,16 @@
           }
         }
       }
+
+      .cart-qty {
+        background-color: var(--light-gray);
+      }
     }
   }
 
   &__name {
     font-size: 12px;
-    font-family: 'GeologicaRegular';
+    font-family: 'GeologicaLight';
     color: var(--dark-gray);
   }
 }

@@ -10,6 +10,10 @@
   top: 2px;
   right: 16px;
 
+  &--grey {
+    background-color: var(--light-gray);
+  }
+
   &__num {
     display: block;
     width: 14px;
@@ -21,6 +25,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'GeologicaRegular';
+    font-family: 'GeologicaLight';
   }
 }

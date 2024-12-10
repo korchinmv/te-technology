@@ -1,7 +1,7 @@
 .mobile-menu {
   background-color: var(--bg-gray);
   padding: 40px 0;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   left: 0;
   right: 0;
@@ -57,7 +57,7 @@
     font-size: 14px;
     color: var(--accent);
     transition: color 0.3s;
-    font-family: 'GeologicaRegular';
+    font-family: 'GeologicaLight';
 
     &:hover {
       color: var(--accent-dark);

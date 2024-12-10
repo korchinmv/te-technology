@@ -4,8 +4,6 @@ const underline = document.querySelector(".tabs__underline");
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
-    console.log("click tab");
-
     tabs.forEach((t) => t.classList.remove("tabs__nav-item--active"));
     tab.classList.add("tabs__nav-item--active");
 
