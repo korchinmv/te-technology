@@ -184,6 +184,11 @@
   &__adress {
     font-family: 'RacamaURegular';
     font-style: normal;
+    margin-bottom: 16px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 8px;
+    }
   }
 
   &__worktime {
