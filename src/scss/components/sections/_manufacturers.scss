@@ -1,0 +1,29 @@
+.manufacturers {
+  padding: 80px 0;
+
+  @media screen and (width <= 768px) {
+    padding: 48px 0;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (width <= 576px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__item {
+    @media screen and (width <= 576px) {
+      width: 164px;
+    }
+  }
+  &__img {
+  }
+}
