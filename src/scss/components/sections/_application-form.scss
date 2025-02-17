@@ -1,0 +1,162 @@
+.application-form {
+  &__wrapper {
+    background-image: url('../img/application-form/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    padding: 120px;
+    position: relative;
+    display: flex;
+
+    @media screen and (width <= 1240px) {
+      padding: 60px;
+    }
+
+    @media screen and (width <= 1024px) {
+      padding: 40px;
+    }
+
+    @media screen and (width <= 990px) {
+      flex-direction: column;
+    }
+
+    @media screen and (width <= 768px) {
+      padding: 24px;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: inherit;
+    }
+
+    &::before {
+      background-color: rgba(35, 35, 35, 0.8);
+      z-index: 1;
+    }
+
+    &::after {
+      background: radial-gradient(25.19% 66.72% at 0% 0%, #ff4d06 0%, rgba(33, 33, 31, 0) 80%);
+      z-index: 2;
+    }
+  }
+
+  &__left {
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 143px;
+
+    @media screen and (width <= 1240px) {
+      margin-right: 20px;
+    }
+
+    @media screen and (width <= 1024px) {
+      max-width: 350px;
+    }
+
+    @media screen and (width <= 990px) {
+      max-width: 100%;
+      margin: 0 0 24px 0;
+    }
+  }
+
+  &__left-head {
+    @media screen and (width <= 990px) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__left,
+  &__form {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__form {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 24px;
+
+    .form__input {
+      background-color: var(--light-gray);
+    }
+
+    .form__text {
+      color: var(--dark-gray);
+    }
+
+    .form__btn {
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__title,
+  &__text,
+  &__bot,
+  &__bot-title,
+  &__link-text,
+  &__link,
+  &__form {
+    color: var(--white);
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.4;
+
+    @media screen and (width <= 990px) {
+      font-size: 16px;
+    }
+  }
+
+  &__bot {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  &__bot-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 5px;
+
+    @media screen and (width <= 1024px) {
+      font-size: 18px;
+    }
+  }
+
+  &__link-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.4;
+
+    @media screen and (width <= 1024px) {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}

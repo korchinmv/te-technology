@@ -70,3 +70,4 @@ const afterForm = () => {
 };
 
 validateForms("#contacts-form", rulesFormContacts, afterForm);
+validateForms("#application-form-section", rulesFormContacts, afterForm);

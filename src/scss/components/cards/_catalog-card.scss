@@ -1,0 +1,136 @@
+.catalog-card {
+  background-color: #f4f7fa;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s;
+
+  &:hover {
+    background: radial-gradient(72.46% 76.46% at 100% 97.95%, #ff4d06 0%, rgba(56, 56, 56, 0) 100%);
+    background-color: var(--black);
+
+    .catalog-card__img {
+      transform: scale(1.1) translate(-5%, -5%);
+    }
+
+    .catalog-card__title,
+    .catalog-card__link-text,
+    .catalog-card__more {
+      color: var(--white);
+    }
+  }
+
+  &__title {
+    font-family: 'RacamaURegular';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    transition: color 0.3s;
+
+    @media screen and (width <= 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__links {
+    position: relative;
+    flex-grow: 1;
+    z-index: 2;
+  }
+
+  &__links-item {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+
+      @media screen and (width <= 768px) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__more {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    text-decoration: underline;
+    color: var(--dark-gray);
+    margin-bottom: 77px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--accent) !important;
+    }
+  }
+
+  &__link {
+    font-family: 'RacamaURegular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(-20px);
+    transition: all 0.3s;
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
+
+    svg {
+      margin-bottom: 3px;
+      transform: translateX(-200%);
+      opacity: 0;
+      margin-right: 5px;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      transform: translateX(0);
+
+      .catalog-card__link-text {
+        color: var(--accent);
+        text-decoration-color: var(--accent);
+      }
+
+      svg {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__link-text {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 3px;
+    transition: all 0.3s;
+    line-height: 1;
+  }
+
+  &__arrow {
+    width: 48px;
+    height: 48px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: auto;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all ease 0.3s;
+    z-index: 0;
+  }
+}

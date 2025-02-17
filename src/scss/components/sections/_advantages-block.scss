@@ -1,6 +1,9 @@
 .advantages-block {
-  background-color: var(--light-blue-bg);
-  padding: 48px 0;
+  padding-bottom: 48px;
+
+  &--bg-light-blue {
+    background-color: var(--light-blue-bg);
+  }
 
   @media screen and (width <= 768px) {
     padding: 25px 0;
@@ -12,6 +15,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 24px;
+    padding-top: 48px;
+    border-top: 1px solid var(--light-gray);
 
     @media screen and (width <= 990px) {
       justify-content: space-around;

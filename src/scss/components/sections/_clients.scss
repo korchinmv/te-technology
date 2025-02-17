@@ -1,14 +1,22 @@
 .clients {
-  padding: 48px 0;
+  padding-bottom: 48px;
+  position: relative;
+  z-index: 3;
 
   &__head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
+    padding-top: 80px;
+    border-top: 1px solid var(--light-gray);
 
     @media screen and (width <= 1024px) {
       margin-bottom: 32px;
+    }
+
+    @media screen and (width <= 768px) {
+      padding-top: 48px;
     }
   }
 
@@ -20,9 +28,6 @@
     @media screen and (width <= 568px) {
       padding-bottom: 35px;
     }
-
-    // &.slider-controls {
-    // }
   }
 
   &__slider-controls {
@@ -44,7 +49,11 @@
 
     @media screen and (width <= 568px) {
       display: block;
-      top: 90px !important;
+      position: relative;
+
+      .swiper-pagination-progressbar-fill {
+        position: absolute;
+      }
     }
   }
 }

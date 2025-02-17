@@ -1,0 +1,66 @@
+<section class="application-form">
+  <div class="container">
+    <div class="application-form__wrapper">
+      <div class="application-form__left">
+        <div class="application-form__left-head">
+          <h2 class="application-form__title title-block">Не можете найти то, что вам нужно?</h2>
+          <p class="application-form__text">Оставьте заявку и опишите, какое оборудование вам необходимо.
+            Мы свяжемся с вами и поможем подобрать.</p>
+        </div>
+
+        <div class="application-form__bot">
+          <img class="application-form__bit-icon" src="img/application-form/mail.png" alt="Картинка">
+
+          <div class="application-form__bot-inner">
+            <span class="application-form__bot-title">Остались вопросы</span>
+            <div class="application-form__link-wrap">
+              <span class="application-form__link-text">Напишите:</span>
+              <a class="application-form__link" href="mailto:info@te-technology.ru">info@te-technology.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="application-form__form form " id="application-form-section" name="application-form">
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <input class="form__input input-name" type="text" id="name" placeholder="" data-validate-field="name">
+          <label class="form__placeholder" for="name">Как к&nbsp;вам обращаться</label>
+        </div>
+
+        <div class="form__block-inputs">
+          <div class="form__input-wrapper form__input-wrapper--margin">
+            <input class="form__input input-tel" type="tel" id="phone" placeholder="" data-validate-field="phone"
+              inputmode="text">
+            <label class="form__placeholder" for="phone">Телефон</label>
+          </div>
+
+          <div class="form__input-wrapper form__input-wrapper--margin">
+            <input class="form__input input-mail" type="text" id="email" placeholder="" data-validate-field="mail">
+            <label class="form__placeholder" for="email">Email</label>
+          </div>
+        </div>
+
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <input class="form__input input-company" type="text" id="company-name" placeholder=""
+            data-validate-field="company-name">
+          <label class="form__placeholder" for="company-name">Название вашей компании</label>
+        </div>
+
+        <div class="form__approval">
+          <label class="form__label form__label--checkbox custom-checkbox">
+            <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+              data-validate-field="checkbox">
+
+            <span class="custom-checkbox__span"></span>
+          </label>
+          <p class="form__text">Вы&nbsp;соглашаетесь с&nbsp;политикой обработки <a class="form__text-link"
+              href="#">персональных данных</a></p>
+        </div>
+
+        <button class="form__btn button-primary">
+          Оставить заявку
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
