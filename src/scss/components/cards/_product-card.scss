@@ -1,0 +1,43 @@
+.product-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 24px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 16px;
+  }
+
+  &__title {
+    font-family: 'RacamaURegular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 1.1;
+    }
+  }
+
+  &__img {
+    width: 260px;
+    align-self: center;
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__more {
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      padding: 10px 32px;
+    }
+  }
+}

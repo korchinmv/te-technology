@@ -1,0 +1,114 @@
+.info-block {
+  padding: 40px 0 80px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 0 40px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+
+    @media screen and (max-width: 990px) {
+      flex-direction: column;
+      row-gap: 16px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  &__left-item {
+    padding: 24px;
+    position: relative;
+    border-radius: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    @media screen and (max-width: 768px) {
+      padding: 16px;
+    }
+
+    &:nth-child(1) {
+      background-image: url('../img/info-block/1.jpg');
+    }
+
+    &:nth-child(2) {
+      background-image: url('../img/info-block/2.jpg');
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: inherit;
+    }
+
+    &::before {
+      background-color: rgba(35, 35, 35, 0.3);
+      z-index: 1;
+    }
+
+    &::after {
+      background: radial-gradient(45.19% 76.72% at 0% 0%, #ff4d06 0%, rgba(33, 33, 31, 0) 90%),
+        linear-gradient(130deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+      z-index: 2;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.1;
+    font-family: 'RacamaURegular';
+    color: var(--white);
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 990px) {
+      font-size: 26px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  &__title,
+  &__link {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__link {
+    display: block;
+    width: fit-content;
+  }
+
+  &__right,
+  &__left {
+    width: calc(50% - 12px);
+
+    @media screen and (max-width: 990px) {
+      width: 100%;
+    }
+  }
+
+  &__right-slider {
+    height: 100%;
+  }
+}

@@ -23,6 +23,7 @@
 @import './components/ui/custom-checkbox';
 @import './components/ui/slider-controls';
 @import './components/ui/slider-pagination';
+@import './components/ui/slider';
 
 @import './components/elements/socials';
 @import './components/elements/table';
@@ -34,7 +35,11 @@
 @import './components/sections/advantages-block';
 @import './components/sections/catalog';
 @import './components/sections/application-form';
+@import './components/sections/products-section';
+@import './components/sections/info-block';
 
 @import './components/cards/catalog-card';
+@import './components/cards/product-card';
+@import './components/cards/article-card';
 
 @import './pages/contacts';

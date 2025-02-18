@@ -54,3 +54,68 @@ const clientsSwiper = new Swiper(".clients__slider", {
     },
   },
 });
+
+const productsHitsSwiper = new Swiper("#products-hits", {
+  slidesPerView: 1.1,
+  spaceBetween: 24,
+  navigation: {
+    prevEl: ".products-hits-prev",
+    nextEl: ".products-hits-next",
+  },
+  pagination: {
+    el: ".products-hits-pagination",
+    type: "progressbar",
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    990: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+  },
+});
+
+const productsMonthSwiper = new Swiper("#products-month", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  navigation: {
+    prevEl: ".products-month-prev",
+    nextEl: ".products-month-next",
+  },
+  pagination: {
+    el: ".products-month-pagination",
+    type: "progressbar",
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    990: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+  },
+});
+
+const articlesSwiper = new Swiper("#articles", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  navigation: {
+    prevEl: ".articles-prev",
+    nextEl: ".articles-next",
+  },
+  pagination: {
+    el: ".articles-pagination",
+    type: "progressbar",
+  },
+  breakpoints: {
+    1140: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+  },
+});

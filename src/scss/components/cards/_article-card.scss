@@ -1,0 +1,83 @@
+.article-card {
+  padding: 24px;
+  position: relative;
+  border-radius: 8px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  &__badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 24px;
+    left: 24px;
+    border-radius: 16px;
+    padding: 8px 16px;
+    background-color: var(--light-gray);
+  }
+
+  &__badge-icon {
+    margin-right: 4px;
+  }
+
+  &__link-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    width: 260px;
+  }
+
+  &__autor {
+    display: flex;
+    align-items: center;
+  }
+
+  &__profile {
+    margin-right: 8px;
+  }
+
+  &__link-title {
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  &__title {
+    font-family: 'RacamaURegular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &__link-text {
+    .article-card__text {
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--dark-gray);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s;
+  }
+
+  &__button {
+    text-align: center;
+  }
+}

@@ -1,0 +1,68 @@
+.slider {
+  background-color: var(--light-blue-bg);
+  border-radius: 12px;
+  padding: 24px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__title {
+    font-family: 'RacamaURegular';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.1;
+    margin-right: 5px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 990px) {
+      font-size: 26px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      margin-right: 0;
+    }
+  }
+
+  &__slider-controls {
+    &.slider-controls {
+      @media screen and (max-width: 1024px) {
+        column-gap: 15px;
+      }
+    }
+  }
+
+  &__swiper-wrapper {
+    margin-bottom: 16px;
+  }
+
+  &__slider-controls {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .products-hits-pagination,
+  .products-month-pagination,
+  .articles-pagination {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+}
