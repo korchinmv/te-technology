@@ -30,7 +30,12 @@
     font-size: 24px;
     line-height: 1.1;
     margin-bottom: 24px;
-    transition: color 0.3s;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 3px;
+    transition:
+      color 0.3s,
+      text-decoration-color 0.3s;
 
     @media screen and (width <= 768px) {
       font-size: 20px;
@@ -90,12 +95,45 @@
       opacity: 0;
       margin-right: 5px;
       transition: all 0.3s;
+      align-self: flex-start;
+      flex-shrink: 0;
     }
 
     &:hover {
       transform: translateX(0);
 
       .catalog-card__link-text {
+        color: var(--accent);
+        text-decoration-color: var(--accent);
+      }
+
+      svg {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__title-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(-25px);
+    transition: all 0.3s;
+
+    svg {
+      transform: translateX(-200%);
+      opacity: 0;
+      margin-right: 3px;
+      transition: all 0.3s;
+      flex-shrink: 0;
+      align-self: flex-start;
+    }
+
+    &:hover {
+      transform: translateX(-15px);
+
+      .catalog-card__title {
         color: var(--accent);
         text-decoration-color: var(--accent);
       }

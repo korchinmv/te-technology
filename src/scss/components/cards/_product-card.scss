@@ -15,6 +15,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.2;
+    transition: color 0.3s;
 
     @media screen and (max-width: 1024px) {
       font-size: 18px;
@@ -38,6 +39,12 @@
 
     @media screen and (max-width: 768px) {
       padding: 10px 32px;
+    }
+  }
+
+  &__title-link {
+    &:hover {
+      color: var(--accent);
     }
   }
 }

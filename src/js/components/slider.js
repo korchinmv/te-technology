@@ -1,7 +1,7 @@
 // Подключение свайпера
 import Swiper from "swiper";
-import { Navigation, Pagination, Thumbs } from "swiper/modules";
-Swiper.use([Navigation, Pagination, Thumbs]);
+import { Navigation, Pagination, Thumbs, Autoplay } from "swiper/modules";
+Swiper.use([Navigation, Pagination, Thumbs, Autoplay]);
 
 const heroSwiper = new Swiper(".hero__slider", {
   loop: true,
@@ -12,7 +12,7 @@ const heroSwiper = new Swiper(".hero__slider", {
   },
   speed: 700,
   autoplay: {
-    delay: 5000,
+    delay: 3500,
   },
   navigation: {
     nextEl: ".hero__slider-controls-next",

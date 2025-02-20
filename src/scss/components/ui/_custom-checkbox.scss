@@ -1,4 +1,10 @@
 .custom-checkbox {
+  &--border-grey {
+    .custom-checkbox__span::before {
+      border-color: var(--light-gray);
+    }
+  }
+
   /* создание в label псевдоэлемента before со следующими стилями */
   &__span::before {
     content: '';
