@@ -1,0 +1,15 @@
+.seo-block {
+  padding: 80px 0;
+
+  @media screen and (width <= 768px) {
+    padding: 48px 0;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 24px;
+    }
+  }
+}

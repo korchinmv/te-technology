@@ -6,5 +6,6 @@ import "./components/tabs.js";
 import "./components/slider.js";
 import "./components/form.js";
 import "./components/overlay.js";
+import "./components/accordion.js";
 import "./functions/header-height.js";
 import "./functions/validate-forms.js";

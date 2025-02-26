@@ -1,6 +1,19 @@
 .advantages-block {
   padding-bottom: 48px;
 
+  &--padding-80 {
+    padding: 80px 0;
+
+    @media screen and (width <= 768px) {
+      padding: 48px 0;
+    }
+
+    .advantages-block__list {
+      padding-top: 0;
+      border: none;
+    }
+  }
+
   &--bg-light-blue {
     background-color: var(--light-blue-bg);
   }

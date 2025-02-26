@@ -1,7 +1,15 @@
 .clients {
-  padding-bottom: 48px;
   position: relative;
   z-index: 3;
+
+  &--border-b {
+    padding-bottom: 0;
+
+    .clients__slider {
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--light-gray);
+    }
+  }
 
   &__head {
     display: flex;

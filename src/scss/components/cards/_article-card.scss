@@ -18,10 +18,6 @@
     background-color: var(--light-gray);
   }
 
-  &__badge-icon {
-    margin-right: 4px;
-  }
-
   &__link-img {
     display: flex;
     justify-content: center;
@@ -35,6 +31,12 @@
   &__autor {
     display: flex;
     align-items: center;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
   }
 
   &__profile {

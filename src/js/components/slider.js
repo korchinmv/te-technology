@@ -78,6 +78,33 @@ const productsHitsSwiper = new Swiper("#products-hits", {
   },
 });
 
+const productsHitsCatalogSwiper = new Swiper("#products-hits-catalog", {
+  slidesPerView: 1.1,
+  spaceBetween: 24,
+  navigation: {
+    prevEl: ".products-hits-prev",
+    nextEl: ".products-hits-next",
+  },
+  pagination: {
+    el: ".products-hits-pagination",
+    type: "progressbar",
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+  },
+});
+
 const productsMonthSwiper = new Swiper("#products-month", {
   slidesPerView: 1.1,
   spaceBetween: 16,

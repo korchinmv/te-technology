@@ -1,0 +1,18 @@
+.category-part {
+  padding-top: 80px;
+  border-top: 1px solid var(--light-gray);
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    margin-right: 20px;
+    max-width: 332px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1044px;
+  }
+}

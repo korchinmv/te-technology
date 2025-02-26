@@ -9,6 +9,10 @@
     padding-top: 80px;
     border-top: 1px solid var(--light-gray);
 
+    &--no-decor {
+      border-top: none;
+    }
+
     @media screen and (width <= 768px) {
       padding-top: 48px;
     }

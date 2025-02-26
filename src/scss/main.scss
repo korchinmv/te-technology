@@ -24,9 +24,12 @@
 @import './components/ui/slider-controls';
 @import './components/ui/slider-pagination';
 @import './components/ui/slider';
+@import './components/ui/accordion';
 
 @import './components/elements/socials';
 @import './components/elements/table';
+@import './components/elements/date';
+@import './components/elements/category-part';
 
 @import './components/sections/questions';
 @import './components/sections/clients';
@@ -37,9 +40,13 @@
 @import './components/sections/application-form';
 @import './components/sections/products-section';
 @import './components/sections/info-block';
+@import './components/sections/questions-accordion';
+@import './components/sections/seo-block';
 
 @import './components/cards/catalog-card';
+@import './components/cards/category-card';
 @import './components/cards/product-card';
 @import './components/cards/article-card';
 
 @import './pages/contacts';
+@import './pages/catalog';
