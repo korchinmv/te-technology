@@ -4,9 +4,22 @@
   display: flex;
   justify-content: space-between;
 
+  @media screen and (width <= 1350px) {
+    flex-direction: column;
+  }
+
+  @media screen and (width <= 768px) {
+    padding-top: 0;
+    border-top: none;
+  }
+
   &__title {
     margin-right: 20px;
     max-width: 332px;
+
+    @media screen and (width <= 1350px) {
+      margin: 0 0 16px;
+    }
   }
 
   &__list {
@@ -14,5 +27,42 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     max-width: 1044px;
+
+    @media screen and (width <= 1350px) {
+      max-width: 100%;
+    }
+
+    @media screen and (width <= 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width <= 768px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      @media screen and (width <= 768px) {
+        border-bottom: 1px solid var(--light-gray);
+      }
+    }
+
+    &:first-child {
+      .category-card {
+        @media screen and (width <= 768px) {
+          border-radius: 16px 16px 0 0;
+        }
+      }
+    }
+
+    &:last-child {
+      .category-card {
+        @media screen and (width <= 768px) {
+          border-radius: 0 0 16px 16px;
+        }
+      }
+    }
   }
 }
