@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  @include('partials/header.html')
+  @include('partials/header-scroll.html')
+  @include('partials/mobileMenu.html')
+  <main class="main overlay">
+    <section class="info-page">
+
+      <div class="info-page__head">
+        <div class="container">
+          <div class="info-page__breadcrumbs breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
+              </li>
+
+              <li class="breadcrumbs__item breadcrumbs__item--active">
+                <span>Информация для юридических лиц</span>
+              </li>
+            </ul>
+          </div>
+
+          <h1 class="info-page__title section-title">Информация для юридических лиц</h1>
+
+          <p class="info-page__text">Компании и ИП могут заказывать товары и оплачивать их по безналичному расчету. Если
+            вы — представитель или собственник компании, можете сделать заказ несколькими способами:</p>
+        </div>
+      </div>
+
+      <div class="info-page__content">
+        <div class="container">
+          <div class="info-page__content-wrapper">
+            <div class="info-page__content-item">
+              <span class="info-page__content-name">1. Через корзину</span>
+              <div class="info-page__content-text">
+                <div class="info-page__content-text">
+                  <p class="info-page__content-text-block">Выберите нужный товар, добавьте его в Корзину,
+                    зарегистрируйтесь и начните оформлять заказ.</p>
+                </div>
+              </div>
+            </div>
+            <div class="info-page__content-item">
+              <span class="info-page__content-name">2. Через почту</span>
+              <div class="info-page__content-text">
+                <p class="info-page__content-text-block">Отправьте заявку на почту info@te-technology.ru, укажите
+                  перечень товаров, которые вам нужны, а также реквизиты компании. Мы подберем оборудование и выставим
+                  вам счет.</p>
+              </div>
+            </div>
+            <div class="info-page__content-item">
+              <span class="info-page__content-name">3. По телефону</span>
+              <div class="info-page__content-text">
+                <p class="info-page__content-text-block">Позвоните нам по бесплатному телефону +7 (846) 255-00-85</p>
+                <ol>
+                  <li>Сообщите менеджеру, какой товар вам нужен.</li>
+                  <li>Назовите ваше ФИО, контактный телефон и желаемый способ доставки</li>
+                  <li>После оформления заказа мы сообщим вам номер заказа и вышлем счет на оплату</li>
+                </ol>
+              </div>
+            </div>
+            <div class="info-page__content-item">
+              <span class="info-page__content-name">4. Преимущества для юридических лиц:
+              </span>
+              <div class="info-page__content-text">
+                <ul class="">
+                  <li>готовим полный пакет документов (договора, спецификации, приложения, счета, УПД, сертификаты на
+                    продукцию).</li>
+                  <li>принимаем участие в тендерах;</li>
+                  <li>работаем с основными транспортными компаниями – СДЭК, Деловые Линии.</li>
+                  <li>доставляем оборудование и комплектующие по всей России</li>
+                  <li>делаем комплексные поставки оборудования под нужды предприятий;</li>
+                  <li>изготовляем специзделия по индивидуальным заказам;</li>
+                  <li>принимаем оплату по безналичному расчету или банковской картой;</li>
+                  <li>предоставляем возможность оплаты 50/50</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-page__footnote">
+            <span class="info-page__footnote-date">Обновлено: 06 Февраля 2023 года</span>
+            <span class="info-page__company">г. Самара, ООО «Тайм Электро», ОГРН 1176313073133</span>
+          </div>
+
+          <div class="application-form">
+            <div class="application-form__wrapper">
+              <div class="application-form__left">
+                <div class="application-form__left-head">
+                  <h2 class="application-form__title title-block">Не&nbsp;можете найти то, что вам нужно?</h2>
+                  <p class="application-form__text">Оставьте заявку и&nbsp;опишите, какое оборудование вам необходимо.
+                    Мы&nbsp;свяжемся с&nbsp;вами и&nbsp;поможем подобрать.</p>
+                </div>
+
+                <div class="application-form__bot">
+                  <img class="application-form__bit-icon" src="img/application-form/mail.png" alt="Картинка">
+
+                  <div class="application-form__bot-inner">
+                    <span class="application-form__bot-title">Остались вопросы</span>
+                    <div class="application-form__link-wrap">
+                      <span class="application-form__link-text">Напишите:</span>
+                      <a class="application-form__link" href="mailto:info@te-technology.ru">info@te-technology.ru</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <form class="application-form__form form " id="application-form-section" name="application-form"
+                novalidate="novalidate">
+                <div class="form__input-wrapper form__input-wrapper--margin">
+                  <input class="form__input input-name" type="text" id="name" placeholder="" data-validate-field="name">
+                  <label class="form__placeholder" for="name">Как к&nbsp;вам обращаться</label>
+                </div>
+
+                <div class="form__block-inputs">
+                  <div class="form__input-wrapper form__input-wrapper--margin">
+                    <input class="form__input input-tel" type="tel" id="phone" placeholder=""
+                      data-validate-field="phone" inputmode="text">
+                    <label class="form__placeholder" for="phone">Телефон</label>
+                  </div>
+
+                  <div class="form__input-wrapper form__input-wrapper--margin">
+                    <input class="form__input input-mail" type="text" id="email" placeholder=""
+                      data-validate-field="mail">
+                    <label class="form__placeholder" for="email">Email</label>
+                  </div>
+                </div>
+
+                <div class="form__input-wrapper form__input-wrapper--margin">
+                  <input class="form__input input-company" type="text" id="company-name" placeholder=""
+                    data-validate-field="company-name">
+                  <label class="form__placeholder" for="company-name">Название вашей компании</label>
+                </div>
+
+                <div class="form__approval">
+                  <label class="form__label form__label--checkbox custom-checkbox custom-checkbox--border-grey">
+                    <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                      data-validate-field="checkbox">
+
+                    <span class="custom-checkbox__span"></span>
+                  </label>
+                  <p class="form__text">Вы&nbsp;соглашаетесь с&nbsp;политикой обработки <a class="form__text-link"
+                      href="#">персональных данных</a></p>
+                </div>
+
+                <button class="form__btn button-primary">
+                  Оставить заявку
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="advantages-block advantages-block--padding-80">
+            <ul class="advantages-block__list">
+              <li class="advantages-block__item">
+                <img class="advantages-block__img" src="img/advantages-block/1.png" alt="Картинка">
+                <div class="advantages-block__inner">
+                  <h4 class="advantages-block__title">Большой выбор</h4>
+                  <p class="advantages-block__text">Самый большой ассортимент</p>
+                </div>
+              </li>
+              <li class="advantages-block__item">
+                <img class="advantages-block__img" src="img/advantages-block/2.png" alt="Картинка">
+                <div class="advantages-block__inner">
+                  <h4 class="advantages-block__title">Быстрая доставка</h4>
+                  <p class="advantages-block__text">Доставка по&nbsp;всей России</p>
+                </div>
+              </li>
+              <li class="advantages-block__item">
+                <img class="advantages-block__img" src="img/advantages-block/3.png" alt="Картинка">
+                <div class="advantages-block__inner">
+                  <h4 class="advantages-block__title">Гарантия качества</h4>
+                  <p class="advantages-block__text">Товары известных брендов</p>
+                </div>
+              </li>
+              <li class="advantages-block__item">
+                <img class="advantages-block__img" src="img/advantages-block/4.png" alt="Картинка">
+                <div class="advantages-block__inner">
+                  <h4 class="advantages-block__title">Техподдержка</h4>
+                  <p class="advantages-block__text">Ответим на&nbsp;все ваши вопросы</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+  @include('partials/mobileNavbar.html')
+  @include('partials/navbarMenu.html')
+</body>
+
+</html>

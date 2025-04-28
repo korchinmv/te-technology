@@ -1,0 +1,154 @@
+.info-page {
+  &__head {
+    background-color: var(--bg-gray);
+    padding: 40px 0;
+    margin-bottom: 40px;
+
+    @media screen and (width <=768px) {
+      padding-top: 24px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 160px;
+
+    @media screen and (width <=1100px) {
+      margin-bottom: 100px;
+    }
+
+    @media screen and (width <=768px) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 32px;
+
+      &.section-title {
+        font-size: 28px;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+
+    @media screen and (width <=768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__content-wrapper {
+    margin-bottom: 80px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content-item {
+    display: flex;
+    column-gap: 24px;
+
+    @media screen and (width <=990px) {
+      flex-direction: column;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--light-gray);
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content-name {
+    max-width: 332px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.1;
+    flex-shrink: 0;
+
+    @media screen and (width <=990px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__content-text {
+    ul {
+      list-style-type: disc;
+      padding-left: 25px;
+    }
+  }
+
+  &__content-text-block {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.4;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__footnote {
+    background-color: var(--light-blue-bg);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__footnote-date {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.1;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  &__company {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+
+  &__content-text {
+    margin-bottom: 80px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 32px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
+  }
+
+  &__content-paragraph {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+}
