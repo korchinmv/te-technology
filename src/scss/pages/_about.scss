@@ -1,0 +1,230 @@
+.about {
+  &__title {
+    margin-bottom: 16px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    margin-bottom: 40px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 80px;
+
+    @media screen and (width <=1024px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (width <=576px) {
+      gap: 8px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__item {
+    background-color: var(--light-blue-bg);
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    min-height: 354px;
+    flex: 1 1 33.3%;
+
+    @media screen and (width <=768px) {
+      min-height: auto;
+    }
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--accent);
+    margin-bottom: 32px;
+
+    @media screen and (width <=768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__item-text {
+    font-size: 18px;
+    margin-top: auto;
+
+    @media screen and (width <=768px) {
+      margin-top: 0;
+    }
+  }
+
+  &__solutions-wrapper {
+    padding: 80px 0;
+    margin-bottom: 80px;
+    border-top: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+
+    @media screen and (width <=768px) {
+      padding: 48px 0;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__title-solutions {
+    margin-bottom: 48px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__solutions-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 24px;
+
+    @media screen and (width <=768px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 24px;
+    }
+  }
+
+  &__solutions-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__solutions-img {
+    margin-bottom: 16px;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__solutions-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+
+    @media screen and (width <=768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__solutions-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--dark-gray);
+  }
+
+  &__requisites {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    @media screen and (width <=1024px) {
+      flex-direction: column;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__requisites-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 356px;
+    width: 100%;
+    margin-right: 10px;
+
+
+    @media screen and (width <=1024px) {
+      margin-right: 0;
+      margin-bottom: 24px;
+      max-width: 100%;
+    }
+  }
+
+  &__requisites-title {
+    margin-bottom: 24px;
+  }
+
+  &__requisites-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--dark-gray);
+  }
+
+  &__requisites-btn {
+    border-radius: 38px;
+    color: var(--accent);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    background-color: var(--light-gray);
+    max-width: 332px;
+    padding: 15px 30px;
+    text-align: center;
+    margin-top: auto;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: var(--accent);
+      color: var(--white);
+    }
+
+    &--desktop {
+      @media screen and (width <=1024px) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @media screen and (width <=1024px) {
+        display: block;
+        margin: 0 auto;
+      }
+
+      @media screen and (width <=576px) {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  &__requisites-table {
+    max-width: 925px;
+
+    .table__item {
+      max-width: 100%;
+    }
+
+    .table__row {
+      @media screen and (width <=768px) {
+        font-size: 16px;
+      }
+
+      @media screen and (width <=576px) {
+        flex-direction: column;
+        row-gap: 4px;
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    @media screen and (width <=1024px) {
+      margin-bottom: 24px;
+    }
+  }
+}
